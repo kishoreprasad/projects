@@ -71,6 +71,7 @@ $ ./todo help             # Show usage
 $ ./todo report           # Statistics''')
 
 def report():
+	#has a bug. Can be corrected
 	if os.path.isfile("todo.txt"):
 		todo_file=open(cwd+"/todo.txt",'r').read().split("\n\n")
 		todo_file.remove("txt")
